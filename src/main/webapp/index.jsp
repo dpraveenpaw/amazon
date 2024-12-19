@@ -54,7 +54,7 @@
     </div>
 
     <div class="footer">
-        <p>Best wishes from <%= request.getAttribute("ur friend besti") != null ? request.getAttribute("senderName") : "Your Name" %></p>
+        <p>Best wishes from <%= request.getAttribute("urs-friend-besti") != null ? request.getAttribute("senderName") : "Your Name" %></p>
     </div>
 
 </body>
