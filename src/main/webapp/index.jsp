@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +54,7 @@
     </div>
 
     <div class="footer">
-        <p>Best wishes from [Your Name]</p>
+        <p>Best wishes from <%= request.getAttribute("senderName") != null ? request.getAttribute("senderName") : "Your Name" %></p>
     </div>
 
 </body>
