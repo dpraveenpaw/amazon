@@ -1,62 +1,73 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Sister</title>
+    <title>Praveen - DevOps Engineering</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
             text-align: center;
-            padding: 20px;
+            color: #333;
         }
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-        }
+
         h1 {
-            color: #ff4081;
+            color: #2e8b57;
         }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         p {
-            font-size: 18px;
+            font-size: 1.2em;
             line-height: 1.6;
         }
-        .footer {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #555;
+
+        .highlight {
+            color: #2e8b57;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
+
+    <h1>Welcome to Praveen's DevOps Engineering Page</h1>
+
     <div class="container">
-        <h1>Happy Birthday, Sister!</h1>
-        <p>
-            Having you as my sister is a blessing I will never take for granted. Our bond has grown stronger over the years, filled with countless shared tears and laughter.  
-            Whether we talk endlessly or sit in silence, it doesn’t matter—because I always know you are there for me.  
-        </p>
-        <p>
-            I couldn’t imagine walking through this journey called life without you. You are my sister, my constant support, and my irreplaceable treasure. I love you deeply and wholeheartedly.
-        </p>
-        <p>
-            Today is your birthday, and I’m not just celebrating another year of your life—I’m celebrating the amazing person you are. Thinking of all the wonderful times we’ve shared fills my heart with gratitude. Once again, I’m reminded of just how incredible you are.
-        </p>
-        <p>
-            On this special day, I wish you boundless happiness, good health, and endless love. May your life always be filled with joy and success.
-        </p>
-        <h2>Happy Birthday, Sister!</h2>
-        <div class="footer">
-            <p>With love,</p>
-            <p><strong>D. Praveen</strong></p>
-            <p><em>DevOps Engineer</em></p>
-        </div>
+        <p>Hello, my name is <span class="highlight">Praveen</span>, and I am a passionate <span class="highlight">DevOps Engineer</span> focused on automating the deployment pipeline, continuous integration (CI), and continuous delivery (CD) to streamline software development processes.</p>
+        <p>As a DevOps Engineer, my role involves collaborating with developers, IT teams, and system administrators to ensure the smooth, fast, and reliable delivery of software products. I work with tools like Jenkins, Docker, Kubernetes, and Terraform to enhance the automation and scalability of infrastructure.</p>
+
+        <h2>Core Skills</h2>
+        <ul>
+            <li>Continuous Integration & Continuous Deployment (CI/CD)</li>
+            <li>Automation & Infrastructure as Code (IaC)</li>
+            <li>Containerization with Docker</li>
+            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+            <li>Configuration Management with Ansible, Puppet, Chef</li>
+            <li>Version Control with Git & GitHub</li>
+        </ul>
     </div>
+
+    <footer>
+        <p>© 2024 Praveen - DevOps Engineering</p>
+    </footer>
+
 </body>
 </html>
