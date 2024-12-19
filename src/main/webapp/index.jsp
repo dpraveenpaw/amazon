@@ -3,58 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy New Year Greeting</title>
+    <title>Praveen - DevOps Engineering</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
             text-align: center;
-            padding: 50px;
+            color: #333;
         }
 
         h1 {
-            color: #ff6347;
-            font-size: 3em;
-            margin-bottom: 20px;
+            color: #2e8b57;
         }
 
-        p {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        .message {
-            background-color: #ffe4b5;
+        .container {
+            background-color: #ffffff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .footer {
-            margin-top: 50px;
-            font-size: 1em;
-            color: #555;
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #2e8b57;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
 
-    <h1>Happy New Year, Ammu!</h1>
+    <h1>Welcome to Praveen's DevOps Engineering Page</h1>
 
-    <div class="message">
-        <p>How are you? I hope you're doing well!</p>
-        <p>Wishing you good health, happiness, and success in the coming year.</p>
-        <p>Take care and have an amazing year ahead!</p>
+    <div class="container">
+        <p>Hello, my name is <span class="highlight">Praveen</span>, and I am a passionate <span class="highlight">DevOps Engineer</span> focused on automating the deployment pipeline, continuous integration (CI), and continuous delivery (CD) to streamline software development processes.</p>
+        <p>As a DevOps Engineer, my role involves collaborating with developers, IT teams, and system administrators to ensure the smooth, fast, and reliable delivery of software products. I work with tools like Jenkins, Docker, Kubernetes, and Terraform to enhance the automation and scalability of infrastructure.</p>
+
+        <h2>Core Skills</h2>
+        <ul>
+            <li>Continuous Integration & Continuous Deployment (CI/CD)</li>
+            <li>Automation & Infrastructure as Code (IaC)</li>
+            <li>Containerization with Docker</li>
+            <li>Cloud Platforms (AWS, Azure, GCP)</li>
+            <li>Configuration Management with Ansible, Puppet, Chef</li>
+            <li>Version Control with Git & GitHub</li>
+        </ul>
     </div>
 
-    <div class="footer">
-        <p>Best wishes from [ammus-friend]</p>
-    </div>
+    <footer>
+        <p>© 2024 Praveen - DevOps Engineering</p>
+    </footer>
 
 </body>
 </html>
