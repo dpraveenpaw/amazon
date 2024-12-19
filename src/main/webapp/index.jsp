@@ -53,7 +53,7 @@
     </div>
 
     <div class="footer">
-        <p>Best wishes from [Your Name]</p>
+        <p>Best wishes from [ammus friend]</p>
     </div>
 
 </body>
