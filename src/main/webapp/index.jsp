@@ -1,43 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message for Ammu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 20px;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-    </style>
+    <title>New Year Greetings</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Hello Ammu!</h1>
-        <p>How are you?</p>
-        <p>How is your health?</p>
-        <p>Take care of yourself.</p>
-        <p>Advance Happy New Year!</p>
-        <p>Give at least 5 minutes of time for yourself each day.</p>
-    </div>
+    <h1>Happy New Year, Ammu!</h1>
+    <p>How are you? I hope you're doing well!</p>
+    <p>Wishing you good health, happiness, and success in the coming year.</p>
+    <p>Take care!</p>
 </body>
 </html>
