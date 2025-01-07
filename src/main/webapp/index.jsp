@@ -157,7 +157,7 @@
     </div>
 
     <footer>
-        <p>© 2024 Praveen - DevOps Engineering</p>
+        <p>© 2024 D Praveen - DevOps Engineering</p>
     </footer>
 
 </body>
