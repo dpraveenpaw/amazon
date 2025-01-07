@@ -94,7 +94,7 @@
     </header>
 
     <div class="container">
-        <img src="https://static.vecteezy.com/system/resources/previews/024/766/958/large_2x/default-male-avatar-profile-icon-social-media-user-free-vector.jpg" alt="Profile Picture">
+        <img src="images/your-image.jpg" alt="Profile Picture">
         <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology, coding, and solving real-world problems through software development. Below are my skills, experience, and academic qualifications.</p>
 
         <h2>Professional Summary</h2>
