@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manikyam - B.Sc Computer Science Graduate - ATS Resume</title>
     <style>
-        /* General Body Styling */
+        /* General Body Styling with Indian Flag Background */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #2b2d42;
+            background: linear-gradient(to bottom, #ff9933, #ffffff, #138808); /* Indian flag colors */
             color: #ffffff;
             margin: 0;
             padding: 20px;
             text-align: left;
+            background-size: cover;
+            background-position: center;
         }
 
         header {
@@ -35,7 +37,7 @@
         }
 
         .container {
-            background-color: #3b3d58;
+            background-color: rgba(59, 61, 88, 0.9); /* Dark semi-transparent background */
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
