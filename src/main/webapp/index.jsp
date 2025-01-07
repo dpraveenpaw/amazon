@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manikyam - B.Sc Computer Science Graduate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* General Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #1e1e1e;
             color: #ffffff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
         }
 
@@ -24,6 +25,7 @@
             color: #50fa7b;
             font-size: 3em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         /* Main Container Styling */
@@ -36,6 +38,7 @@
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            overflow: hidden;
         }
 
         p {
@@ -54,12 +57,14 @@
             color: #ff79c6;
             font-size: 2.2em;
             margin-top: 40px;
+            text-decoration: underline;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
             font-size: 1.2em;
+            margin-bottom: 40px;
         }
 
         ul li {
@@ -68,11 +73,20 @@
             padding: 10px;
             border-radius: 8px;
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: start;
         }
 
         ul li:hover {
             background-color: #8be9fd;
             transform: translateX(5px);
+        }
+
+        ul li i {
+            margin-right: 15px;
+            font-size: 1.5em;
+            color: #50fa7b;
         }
 
         /* Micro Slave Section */
@@ -108,6 +122,36 @@
             font-size: 0.9em;
             color: #888;
         }
+
+        /* Icons Styling */
+        .icon {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+
+        .devops-icon {
+            background-image: url('https://img.icons8.com/ios/452/devops.png');
+        }
+
+        .cloud-icon {
+            background-image: url('https://img.icons8.com/ios/452/cloud.png');
+        }
+
+        .git-icon {
+            background-image: url('https://img.icons8.com/ios/452/git.png');
+        }
+
+        .linux-icon {
+            background-image: url('https://img.icons8.com/ios/452/linux.png');
+        }
+
+        .python-icon {
+            background-image: url('https://img.icons8.com/ios/452/python.png');
+        }
     </style>
 </head>
 <body>
@@ -121,27 +165,24 @@
 
         <h2>Core Skills</h2>
         <ul>
-            <li>Programming Languages: Java, Python, C, C++, JavaScript</li>
+            <li><i class="icon devops-icon"></i> DevOps Engineering</li>
+            <li><i class="icon cloud-icon"></i> Cloud Computing (AWS, Azure, GCP)</li>
+            <li><i class="icon git-icon"></i> Version Control (Git & GitHub)</li>
+            <li><i class="icon linux-icon"></i> Linux Administration</li>
+            <li><i class="icon python-icon"></i> Python & Automation</li>
             <li>Web Development: HTML, CSS, JavaScript, Bootstrap</li>
             <li>Database Management: MySQL, PostgreSQL, MongoDB</li>
-            <li>Operating Systems: Linux, Windows, macOS</li>
-            <li>Software Development Life Cycle (SDLC)</li>
-            <li>Version Control: Git & GitHub</li>
-            <li>Object-Oriented Programming (OOP)</li>
-            <li>Data Structures & Algorithms</li>
             <li>Networking and Security Fundamentals</li>
-            <li>Cloud Computing Concepts</li>
         </ul>
 
         <div class="micro-slave">
             <h3>Micro Slave (Important Skills)</h3>
             <ul>
-                <li>Problem-Solving with Data Structures</li>
-                <li>Efficient Algorithm Design</li>
-                <li>Version Control Mastery with Git</li>
-                <li>Responsive Web Design using CSS & JavaScript</li>
-                <li>Database Query Optimization</li>
-                <li>Continuous Learning and Adaptation to New Technologies</li>
+                <li><i class="icon devops-icon"></i> Problem-Solving with Data Structures</li>
+                <li><i class="icon cloud-icon"></i> Continuous Integration & Continuous Deployment</li>
+                <li><i class="icon git-icon"></i> Git Version Control Mastery</li>
+                <li><i class="icon linux-icon"></i> Proficient in Linux Systems</li>
+                <li><i class="icon python-icon"></i> Automated Python Scripting</li>
             </ul>
         </div>
 
