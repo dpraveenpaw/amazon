@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manikyam - B.Sc Computer Science Graduate - ATS Resume</title>
+    <title>Manikyam - B.Sc Computer Science Graduate</title>
     <style>
         /* General Body Styling with Indian Flag Background */
         body {
