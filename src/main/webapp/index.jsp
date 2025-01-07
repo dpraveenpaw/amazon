@@ -1,4 +1,3 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manikyam - B.Sc Computer Science Graduate</title>
     <style>
+        /* General Body Styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
-            color: #ffffff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: left;
+            background-color: #ffffff;
+            background-image: url('images/indian-flag.png'); /* Add the path to the Indian flag image */
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
         }
+        
+        /* Overlay effect to make the flag look transparent */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Transparent black overlay */
+            z-index: -1;
+        }
+
+        /* Header Styling */
         header {
             text-align: center;
-            margin-bottom: 20px;
+            padding: 30px;
         }
         h1 {
             color: #ff4f00;
@@ -32,6 +49,8 @@
             margin-top: 20px;
             font-weight: bold;
         }
+
+        /* Main Container Styling */
         .container {
             background-color: rgba(59, 61, 88, 0.9);
             padding: 30px;
@@ -46,21 +65,25 @@
             border-radius: 50%;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
+
         .highlight {
             color: #ff4f00;
             font-weight: bold;
         }
+
         footer {
             margin-top: 40px;
             font-size: 0.9em;
             color: #888;
             text-align: center;
         }
+
     </style>
 </head>
 <body>
@@ -71,7 +94,7 @@
     </header>
 
     <div class="container">
-        <img src="images/your-image.jpg" alt="Profile Picture">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/766/958/large_2x/default-male-avatar-profile-icon-social-media-user-free-vector.jpg" alt="Profile Picture">
         <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology, coding, and solving real-world problems through software development. Below are my skills, experience, and academic qualifications.</p>
 
         <h2>Professional Summary</h2>
