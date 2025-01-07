@@ -1,165 +1,110 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    // Initialize menu items
+    LinkedHashMap<String, Integer> menu = new LinkedHashMap<>();
+    menu.put("Chicken Biryani", 300);
+    menu.put("Mutton Biryani", 700);
+    menu.put("Vegetable Biryani", 200);
+    menu.put("Fish Biryani", 600);
+    menu.put("Egg Biryani", 250);
+    menu.put("Prawn Biryani", 700);
+
+    // Initialize or retrieve session-based orders
+    LinkedHashMap<String, Integer> orders = (LinkedHashMap<String, Integer>) session.getAttribute("orders");
+    if (orders == null) {
+        orders = new LinkedHashMap<>();
+        session.setAttribute("orders", orders);
+    }
+
+    // Handle form submissions (Adding orders)
+    String item = request.getParameter("item");
+    String quantityStr = request.getParameter("quantity");
+    if (item != null && quantityStr != null) {
+        int quantity = Integer.parseInt(quantityStr);
+        if (menu.containsKey(item)) {
+            orders.put(item, orders.getOrDefault(item, 0) + quantity);
+        }
+    }
+
+    // Handle "Clear Order"
+    if ("clear".equals(request.getParameter("action"))) {
+        orders.clear();
+    }
+
+    // Handle "Checkout"
+    boolean checkout = "checkout".equals(request.getParameter("action"));
+%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Order Management</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        .center {
-            text-align: center;
-        }
-    </style>
-    <script>
-        const menu = {
-            "Chicken Biryani": 300,
-            "Mutton Biryani": 700,
-            "Vegetable Biryani": 200,
-            "Fish Biryani": 600,
-            "Egg Biryani": 250,
-            "Prawn Biryani": 700
-        };
-
-        const orders = {};
-
-        function addItemToOrder() {
-            const item = document.getElementById("item").value;
-            const quantity = parseInt(document.getElementById("quantity").value);
-
-            if (!item || quantity <= 0) {
-                alert("Please select a valid item and quantity.");
-                return;
-            }
-
-            if (orders[item]) {
-                orders[item] += quantity;
-            } else {
-                orders[item] = quantity;
-            }
-
-            updateOrderTable();
-        }
-
-        function updateOrderTable() {
-            const orderTable = document.getElementById("order-table-body");
-            orderTable.innerHTML = ""; // Clear previous rows
-
-            let totalAmount = 0;
-
-            for (const [item, quantity] of Object.entries(orders)) {
-                const price = menu[item];
-                const total = price * quantity;
-                totalAmount += total;
-
-                const row = `
-                    <tr>
-                        <td>${item}</td>
-                        <td>${quantity}</td>
-                        <td>₹${price}</td>
-                        <td>₹${total}</td>
-                    </tr>
-                `;
-                orderTable.innerHTML += row;
-            }
-
-            const gst = totalAmount * 0.05; // GST 5%
-            const totalWithGST = totalAmount + gst;
-
-            document.getElementById("total-amount").textContent = `₹${totalAmount}`;
-            document.getElementById("gst").textContent = `₹${gst.toFixed(2)}`;
-            document.getElementById("total-with-gst").textContent = `₹${totalWithGST.toFixed(2)}`;
-        }
-
-        function clearOrder() {
-            if (confirm("Are you sure you want to clear the order?")) {
-                for (const item in orders) {
-                    delete orders[item];
-                }
-                updateOrderTable();
-            }
-        }
-
-        function checkout() {
-            if (Object.keys(orders).length === 0) {
-                alert("No items in your order!");
-                return;
-            }
-
-            const totalWithGST = document.getElementById("total-with-gst").textContent;
-            alert(`Thank you for your order! Your final bill is ${totalWithGST}.`);
-            clearOrder();
-        }
-    </script>
 </head>
 <body>
-    <h1 class="center">Welcome to Our Hotel</h1>
+    <h1>Welcome to Our Hotel</h1>
     <hr>
     <h2>Menu</h2>
-    <table>
+    <table border="1">
         <tr>
             <th>Item</th>
             <th>Price (₹)</th>
         </tr>
-        <!-- Dynamically generate the menu -->
-        <tbody>
-            <script>
-                for (const [item, price] of Object.entries(menu)) {
-                    document.write(`<tr><td>${item}</td><td>₹${price}</td></tr>`);
-                }
-            </script>
-        </tbody>
+        <% for (Map.Entry<String, Integer> entry : menu.entrySet()) { %>
+            <tr>
+                <td><%= entry.getKey() %></td>
+                <td><%= entry.getValue() %></td>
+            </tr>
+        <% } %>
     </table>
     <hr>
     <h2>Place an Order</h2>
-    <form onsubmit="addItemToOrder(); return false;">
+    <form method="post">
         <label for="item">Select Item:</label>
-        <select id="item">
-            <option value="" disabled selected>Select an item</option>
-            <script>
-                for (const item of Object.keys(menu)) {
-                    document.write(`<option value="${item}">${item}</option>`);
-                }
-            </script>
+        <select name="item" id="item">
+            <% for (String menuItem : menu.keySet()) { %>
+                <option value="<%= menuItem %>"><%= menuItem %></option>
+            <% } %>
         </select>
         <br>
         <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" min="1" required>
+        <input type="number" name="quantity" id="quantity" min="1" required>
         <br>
         <button type="submit">Add to Order</button>
     </form>
     <hr>
     <h2>Your Order</h2>
-    <table>
-        <thead>
+    <% if (orders.isEmpty()) { %>
+        <p>No items in your order.</p>
+    <% } else { %>
+        <table border="1">
             <tr>
                 <th>Item</th>
                 <th>Quantity</th>
                 <th>Price (₹)</th>
                 <th>Total (₹)</th>
             </tr>
-        </thead>
-        <tbody id="order-table-body">
-            <!-- Order rows will be dynamically generated -->
-        </tbody>
-    </table>
-    <p>Total Amount (Before GST): <span id="total-amount">₹0</span></p>
-    <p>GST (5%): <span id="gst">₹0.00</span></p>
-    <p><strong>Total Amount (After GST): <span id="total-with-gst">₹0.00</span></strong></p>
-    <button onclick="clearOrder()">Clear Order</button>
-    <button onclick="checkout()">Checkout</button>
+            <% int totalAmount = 0; %>
+            <% for (Map.Entry<String, Integer> entry : orders.entrySet()) { %>
+                <tr>
+                    <td><%= entry.getKey() %></td>
+                    <td><%= entry.getValue() %></td>
+                    <td><%= menu.get(entry.getKey()) %></td>
+                    <td><%= menu.get(entry.getKey()) * entry.getValue() %></td>
+                </tr>
+                <% totalAmount += menu.get(entry.getKey()) * entry.getValue(); %>
+            <% } %>
+        </table>
+        <p>Total Amount (Before GST): ₹<%= totalAmount %></p>
+        <p>GST (5%): ₹<%= totalAmount * 0.05 %></p>
+        <p><strong>Total Amount (After GST): ₹<%= totalAmount * 1.05 %></strong></p>
+        <form method="post">
+            <button type="submit" name="action" value="clear">Clear Order</button>
+            <button type="submit" name="action" value="checkout">Checkout</button>
+        </form>
+    <% } %>
+    <% if (checkout && !orders.isEmpty()) { %>
+        <h2>Thank You for Your Order!</h2>
+        <p>Your final bill is ₹<%= totalAmount * 1.05 %>. Please visit again!</p>
+        <% orders.clear(); %>
+    <% } %>
 </body>
 </html>
