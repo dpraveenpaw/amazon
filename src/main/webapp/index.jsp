@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manikyam - B.Sc Computer Science Graduate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Manikyam - B.Sc Computer Science Graduate - ATS Resume</title>
     <style>
         /* General Body Styling */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #1e1e1e;
-            color: #ffffff;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            padding: 20px;
+            text-align: left;
         }
 
         /* Header Styling */
@@ -22,174 +21,127 @@
         }
 
         h1 {
-            color: #50fa7b;
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            color: #2e8b57;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2e8b57;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 20px;
         }
 
         /* Main Container Styling */
         .container {
-            background-color: #282a36;
-            padding: 40px;
+            background-color: #ffffff;
+            padding: 20px;
             margin-top: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            overflow: hidden;
         }
 
         p {
-            font-size: 1.3em;
+            font-size: 1.1em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
         .highlight {
-            color: #50fa7b;
+            color: #2e8b57;
             font-weight: bold;
         }
 
-        /* Core Skills Section */
-        h2 {
-            color: #ff79c6;
-            font-size: 2.2em;
-            margin-top: 40px;
-            text-decoration: underline;
+        .section-title {
+            color: #2e8b57;
+            font-size: 1.5em;
+            margin-top: 15px;
         }
 
-        ul {
+        /* Skills List Styling */
+        .skills-list {
             list-style-type: none;
             padding: 0;
             font-size: 1.2em;
-            margin-bottom: 40px;
         }
 
-        ul li {
-            background-color: #44475a;
+        .skills-list li {
             margin: 10px 0;
             padding: 10px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: start;
-        }
-
-        ul li:hover {
-            background-color: #8be9fd;
-            transform: translateX(5px);
-        }
-
-        ul li i {
-            margin-right: 15px;
-            font-size: 1.5em;
-            color: #50fa7b;
-        }
-
-        /* Micro Slave Section */
-        .micro-slave {
-            background-color: #50fa7b;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
-
-        .micro-slave h3 {
-            font-size: 1.8em;
-            color: #282a36;
-        }
-
-        .micro-slave ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 1.1em;
-        }
-
-        .micro-slave ul li {
-            background-color: #282a36;
-            padding: 8px;
-            margin: 5px 0;
-            border-radius: 8px;
-            color: #ffffff;
         }
 
         /* Footer Styling */
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 0.9em;
             color: #888;
-        }
-
-        /* Icons Styling */
-        .icon {
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin-right: 10px;
-        }
-
-        .devops-icon {
-            background-image: url('https://img.icons8.com/ios/452/devops.png');
-        }
-
-        .cloud-icon {
-            background-image: url('https://img.icons8.com/ios/452/cloud.png');
-        }
-
-        .git-icon {
-            background-image: url('https://img.icons8.com/ios/452/git.png');
-        }
-
-        .linux-icon {
-            background-image: url('https://img.icons8.com/ios/452/linux.png');
-        }
-
-        .python-icon {
-            background-image: url('https://img.icons8.com/ios/452/python.png');
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to Manikyam's Portfolio</h1>
+        <h1>Manikyam</h1>
+        <p><strong>B.Sc. in Computer Science</strong> - Telangana</p>
     </header>
 
     <div class="container">
-        <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology and computer science and am eager to apply my skills in real-world applications.</p>
+        <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology, coding, and solving real-world problems through software development. Below are my skills, experience, and academic qualifications.</p>
+
+        <h2>Professional Summary</h2>
+        <p>A self-motivated and detail-oriented Computer Science graduate with a solid foundation in software development, DevOps engineering, and web technologies. Proven expertise in cloud computing, automation, and CI/CD processes. Adept at building scalable infrastructure solutions and ensuring seamless integration between teams.</p>
 
         <h2>Core Skills</h2>
-        <ul>
-            <li><i class="icon devops-icon"></i> DevOps Engineering</li>
-            <li><i class="icon cloud-icon"></i> Cloud Computing (AWS, Azure, GCP)</li>
-            <li><i class="icon git-icon"></i> Version Control (Git & GitHub)</li>
-            <li><i class="icon linux-icon"></i> Linux Administration</li>
-            <li><i class="icon python-icon"></i> Python & Automation</li>
-            <li>Web Development: HTML, CSS, JavaScript, Bootstrap</li>
-            <li>Database Management: MySQL, PostgreSQL, MongoDB</li>
-            <li>Networking and Security Fundamentals</li>
+        <ul class="skills-list">
+            <li><span class="highlight">DevOps Engineering</span>: CI/CD pipelines, Jenkins, Docker, Kubernetes</li>
+            <li><span class="highlight">Cloud Platforms</span>: AWS, Azure, GCP</li>
+            <li><span class="highlight">Version Control</span>: Git, GitHub</li>
+            <li><span class="highlight">Automation & Scripting</span>: Python, Shell Scripting</li>
+            <li><span class="highlight">Containerization</span>: Docker, Kubernetes</li>
+            <li><span class="highlight">Infrastructure as Code</span>: Terraform, Ansible</li>
+            <li><span class="highlight">Web Development</span>: HTML, CSS, JavaScript, Bootstrap</li>
+            <li><span class="highlight">Database Management</span>: MySQL, PostgreSQL</li>
+            <li><span class="highlight">Operating Systems</span>: Linux, Windows</li>
+            <li><span class="highlight">Networking</span>: TCP/IP, DNS, HTTP, VPNs</li>
         </ul>
 
-        <div class="micro-slave">
-            <h3>Micro Slave (Important Skills)</h3>
-            <ul>
-                <li><i class="icon devops-icon"></i> Problem-Solving with Data Structures</li>
-                <li><i class="icon cloud-icon"></i> Continuous Integration & Continuous Deployment</li>
-                <li><i class="icon git-icon"></i> Git Version Control Mastery</li>
-                <li><i class="icon linux-icon"></i> Proficient in Linux Systems</li>
-                <li><i class="icon python-icon"></i> Automated Python Scripting</li>
-            </ul>
-        </div>
+        <h2>Education</h2>
+        <p><strong>B.Sc. in Computer Science</strong> - Telangana, 2024</p>
 
+        <h2>Certifications</h2>
+        <ul class="skills-list">
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>AWS Certified Solutions Architect</li>
+            <li>DevOps Foundations</li>
+        </ul>
+
+        <h2>Projects & Achievements</h2>
+        <p><strong>1. Automated Deployment Pipeline:</strong> Built a fully automated CI/CD pipeline for a client using Jenkins, Docker, and Kubernetes to reduce deployment time and enhance productivity.</p>
+        <p><strong>2. Cloud Infrastructure Setup:</strong> Set up a scalable cloud infrastructure on AWS, incorporating load balancing, auto-scaling, and storage management.</p>
+        <p><strong>3. Personal Website:</strong> Developed a personal website using HTML, CSS, and JavaScript to showcase my portfolio and technical achievements.</p>
+
+        <h2>Micro Slave (Important Skills)</h2>
+        <ul class="skills-list">
+            <li><span class="highlight">Problem-Solving:</span> Strong problem-solving ability with a focus on algorithmic thinking and data structures.</li>
+            <li><span class="highlight">CI/CD Expertise:</span> Proficient in implementing end-to-end CI/CD solutions for software delivery.</li>
+            <li><span class="highlight">Version Control:</span> Expertise in Git and GitHub for collaborative development and versioning.</li>
+            <li><span class="highlight">Linux Mastery:</span> In-depth knowledge of Linux systems, including shell scripting, user management, and process control.</li>
+            <li><span class="highlight">Automation:</span> Automation scripting using Python and Shell for reducing manual interventions.</li>
+        </ul>
     </div>
 
     <footer>
-        <p>© 2024 Manikyam - Computer Science Graduate</p>
+        <p>© 2024 Manikyam - B.Sc. Computer Science Graduate | Telangana</p>
     </footer>
 
 </body>
