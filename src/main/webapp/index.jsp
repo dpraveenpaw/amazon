@@ -3,122 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manikyam - B.Sc Computer Science Graduate</title>
+    <title>Manikyam - ATS Resume</title>
     <style>
         /* General Body Styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: left;
-            background-color: #ffffff;
-            background-image: url('images/indian-flag.png'); /* Add the path to the Indian flag image */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: relative;
-        }
-        
-        /* Overlay effect to make the flag look transparent */
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.3); /* Transparent black overlay */
-            z-index: -1;
-        }
-
-        /* Header Styling */
-        header {
             text-align: center;
-            padding: 30px;
-        }
-        h1 {
-            color: #ff4f00;
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        h2 {
-            color: #ff4f00;
-            font-size: 2.5em;
-            margin-top: 20px;
-            font-weight: bold;
+            background-color: #ffffff; /* Set white background for the page */
         }
 
-        /* Main Container Styling */
+        /* Ashoka Chakra Background Image */
+        .ashoka-chakra {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1; /* Position behind the content */
+            opacity: 0.2; /* Make the Ashoka Chakra transparent */
+            pointer-events: none; /* Prevents the image from blocking other content */
+        }
+
+        /* Container Styling */
         .container {
-            background-color: rgba(59, 61, 88, 0.9);
-            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            padding: 20px;
+            margin: 20px auto;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-        }
-        .container img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+            max-width: 800px;
         }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        h1 {
+            color: #138808; /* Dark green color for title */
         }
 
-        .highlight {
-            color: #ff4f00;
-            font-weight: bold;
+        h2 {
+            color: #ff9933; /* Orange color for subtitles */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
         }
 
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 0.9em;
-            color: #888;
-            text-align: center;
+            color: #666;
         }
-
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Manikyam</h1>
-        <p><strong>B.Sc. in Computer Science</strong> - Telangana</p>
-    </header>
+    <!-- Ashoka Chakra as Background -->
+    <div class="ashoka-chakra">
+        <img src="images/ashoka-chakra.png" alt="Ashoka Chakra" width="400px" height="400px">
+    </div>
 
+    <!-- Content Section -->
     <div class="container">
-        <img src="images/your-image.jpg" alt="Profile Picture">
-        <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology, coding, and solving real-world problems through software development. Below are my skills, experience, and academic qualifications.</p>
-
-        <h2>Professional Summary</h2>
-        <p>A self-motivated and detail-oriented Computer Science graduate with a solid foundation in software development, DevOps engineering, and web technologies. Proven expertise in cloud computing, automation, and CI/CD processes. Adept at building scalable infrastructure solutions and ensuring seamless integration between teams.</p>
+        <h1>Welcome to Manikyam's ATS Resume</h1>
+        <p>Hello, my name is <strong>Manikyam</strong>. I completed my graduation in <strong>B.Sc Computer Science</strong> in Telangana.</p>
 
         <h2>Core Skills</h2>
         <ul>
-            <li><span class="highlight">DevOps Engineering</span>: CI/CD pipelines, Jenkins, Docker, Kubernetes</li>
-            <li><span class="highlight">Cloud Platforms</span>: AWS, Azure, GCP</li>
-            <li><span class="highlight">Version Control</span>: Git, GitHub</li>
-            <li><span class="highlight">Automation & Scripting</span>: Python, Shell Scripting</li>
-            <li><span class="highlight">Containerization</span>: Docker, Kubernetes</li>
-            <li><span class="highlight">Infrastructure as Code</span>: Terraform, Ansible</li>
-            <li><span class="highlight">Web Development</span>: HTML, CSS, JavaScript, Bootstrap</li>
-            <li><span class="highlight">Database Management</span>: MySQL, PostgreSQL</li>
-            <li><span class="highlight">Operating Systems</span>: Linux, Windows</li>
-            <li><span class="highlight">Networking</span>: TCP/IP, DNS, HTTP, VPNs</li>
+            <li>Programming Languages: Java, Python, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript, React.js</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>DevOps Tools: Jenkins, Docker, Kubernetes</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Operating Systems: Windows, Linux</li>
         </ul>
 
-        <footer>
-            <p>© 2024 Manikyam - B.Sc. Computer Science Graduate | Telangana</p>
-        </footer>
-
+        <h2>Achievements</h2>
+        <ul>
+            <li>Developed a web application for library management.</li>
+            <li>Certified in Full-Stack Web Development.</li>
+            <li>Participated in state-level coding competitions.</li>
+        </ul>
     </div>
+
+    <footer>
+        <p>© 2025 Manikyam - B.Sc Computer Science</p>
+    </footer>
 
 </body>
 </html>
