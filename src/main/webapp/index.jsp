@@ -9,8 +9,8 @@
         /* General Body Styling */
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #2b2d42;
+            color: #ffffff;
             margin: 0;
             padding: 20px;
             text-align: left;
@@ -22,67 +22,115 @@
         }
 
         h1 {
-            color: #2e8b57;
-            font-size: 2.5em;
+            color: #ff4f00;
+            font-size: 3em;
             margin-bottom: 10px;
+            font-weight: bold;
         }
 
         h2 {
-            color: #2e8b57;
-            font-size: 2em;
+            color: #ff4f00;
+            font-size: 2.5em;
             margin-top: 20px;
+            font-weight: bold;
         }
 
         h3 {
-            color: #333;
-            font-size: 1.5em;
+            color: #ffffff;
+            font-size: 1.6em;
             margin-top: 20px;
+            text-decoration: underline;
         }
 
         /* Main Container Styling */
         .container {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #3b3d58;
+            padding: 30px;
             margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
+        }
+
+        .container img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
         .highlight {
-            color: #2e8b57;
+            color: #ff4f00;
             font-weight: bold;
         }
 
-        .section-title {
-            color: #2e8b57;
-            font-size: 1.5em;
-            margin-top: 15px;
-        }
-
-        /* Skills List Styling */
         .skills-list {
             list-style-type: none;
             padding: 0;
             font-size: 1.2em;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
 
         .skills-list li {
+            background-color: #4a4e69;
             margin: 10px 0;
-            padding: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Footer Styling */
+        .skills-list li:hover {
+            transform: translateX(10px);
+            background-color: #8d99ae;
+        }
+
+        .micro-slave {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .micro-slave div {
+            background-color: #4a4e69;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            flex: 1;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .micro-slave div:hover {
+            transform: translateY(-10px);
+            background-color: #8d99ae;
+        }
+
+        .micro-slave div img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .micro-slave div h4 {
+            color: #ff4f00;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
         footer {
-            margin-top: 30px;
+            margin-top: 40px;
             font-size: 0.9em;
             color: #888;
             text-align: center;
@@ -97,6 +145,7 @@
     </header>
 
     <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
         <p>Hello, my name is <span class="highlight">Manikyam</span>, and I have recently completed my <span class="highlight">B.Sc. in Computer Science</span> from Telangana. I am passionate about technology, coding, and solving real-world problems through software development. Below are my skills, experience, and academic qualifications.</p>
 
         <h2>Professional Summary</h2>
@@ -116,29 +165,35 @@
             <li><span class="highlight">Networking</span>: TCP/IP, DNS, HTTP, VPNs</li>
         </ul>
 
-        <h2>Education</h2>
-        <p><strong>B.Sc. in Computer Science</strong> - Telangana, 2024</p>
-
-        <h2>Certifications</h2>
-        <ul class="skills-list">
-            <li>Certified Kubernetes Administrator (CKA)</li>
-            <li>AWS Certified Solutions Architect</li>
-            <li>DevOps Foundations</li>
-        </ul>
-
-        <h2>Projects & Achievements</h2>
-        <p><strong>1. Automated Deployment Pipeline:</strong> Built a fully automated CI/CD pipeline for a client using Jenkins, Docker, and Kubernetes to reduce deployment time and enhance productivity.</p>
-        <p><strong>2. Cloud Infrastructure Setup:</strong> Set up a scalable cloud infrastructure on AWS, incorporating load balancing, auto-scaling, and storage management.</p>
-        <p><strong>3. Personal Website:</strong> Developed a personal website using HTML, CSS, and JavaScript to showcase my portfolio and technical achievements.</p>
-
         <h2>Micro Slave (Important Skills)</h2>
-        <ul class="skills-list">
-            <li><span class="highlight">Problem-Solving:</span> Strong problem-solving ability with a focus on algorithmic thinking and data structures.</li>
-            <li><span class="highlight">CI/CD Expertise:</span> Proficient in implementing end-to-end CI/CD solutions for software delivery.</li>
-            <li><span class="highlight">Version Control:</span> Expertise in Git and GitHub for collaborative development and versioning.</li>
-            <li><span class="highlight">Linux Mastery:</span> In-depth knowledge of Linux systems, including shell scripting, user management, and process control.</li>
-            <li><span class="highlight">Automation:</span> Automation scripting using Python and Shell for reducing manual interventions.</li>
-        </ul>
+        <div class="micro-slave">
+            <div>
+                <img src="https://via.placeholder.com/60" alt="Problem Solving Icon">
+                <h4>Problem Solving</h4>
+                <p>Strong problem-solving ability with a focus on algorithmic thinking and data structures.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/60" alt="CI/CD Expertise Icon">
+                <h4>CI/CD Expertise</h4>
+                <p>Proficient in implementing end-to-end CI/CD solutions for software delivery.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/60" alt="Version Control Icon">
+                <h4>Version Control</h4>
+                <p>Expertise in Git and GitHub for collaborative development and versioning.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/60" alt="Linux Mastery Icon">
+                <h4>Linux Mastery</h4>
+                <p>In-depth knowledge of Linux systems, including shell scripting, user management, and process control.</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/60" alt="Automation Icon">
+                <h4>Automation</h4>
+                <p>Automation scripting using Python and Shell for reducing manual interventions.</p>
+            </div>
+        </div>
+
     </div>
 
     <footer>
