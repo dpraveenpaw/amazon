@@ -81,6 +81,7 @@
             display: flex;
             justify-content: space-around;
             margin-top: 40px;
+            gap: 20px;
         }
 
         .graphic-block div {
@@ -90,10 +91,11 @@
             flex: 1;
             margin: 0 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
 
         .graphic-block div img {
-            width: 80%;
+            width: 70%;
             margin-bottom: 15px;
         }
 
