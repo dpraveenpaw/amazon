@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
     <style>
         /* General Body Styling */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #2b2d42;
             color: #ffffff;
             margin: 0;
@@ -16,9 +15,9 @@
             text-align: left;
         }
 
-        /* Header Styling */
         header {
-            margin-bottom: 30px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -35,23 +34,13 @@
             font-weight: bold;
         }
 
-        h3 {
-            color: #ffffff;
-            font-size: 1.6em;
-            margin-top: 20px;
-            text-decoration: underline;
-        }
-
-        /* Main Container Styling */
         .container {
             background-color: #3b3d58;
             padding: 30px;
-            margin-top: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             text-align: center;
         }
 
@@ -134,6 +123,25 @@
             font-size: 0.9em;
             color: #888;
             text-align: center;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .micro-slave div {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
