@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Greeting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffd700; /* Gold for title */
+            margin-bottom: 20px;
+            animation: wave 2.5s infinite; /* Wave animation */
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .message {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+            padding: 30px;
+            border-radius: 15px; /* Softer rounded corners */
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            margin: 30px auto;
+            max-width: 600px;
+            backdrop-filter: blur(8px); /* Adds a glassy effect */
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.1em;
+            color: #ffd700; /* Gold color for footer */
+        }
+
+        .friendship-quotes {
+            margin-top: 40px;
+            font-size: 1.3em;
+            font-style: italic;
+            color: #ffebcd; /* Light golden color for quotes */
+        }
+
+        .friendship-quotes p {
+            transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
+        }
+
+        .friendship-quotes p:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            color: #ffd700; /* Gold color on hover */
+        }
+
+        /* Title Animation */
+        @keyframes wave {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p, .friendship-quotes {
+                font-size: 1.2em;
+            }
+
+            .message {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌟 Happy New Year, Ammu! 🌟</h1>
+
+    <div class="message">
+        <p>How are you? I hope you're doing well!</p>
+        <p>Wishing you good health, happiness, and success in the coming year.</p>
+        <p>Take care and have an amazing year ahead!</p>
+    </div>
+
+    <div class="friendship-quotes">
+        <p>"Friends are the family we choose for ourselves."</p>
+        <p>"Good friends are like stars. You don't always see them, but you know they are always there."</p>
+        <p>"A true friend is someone who knows your past, believes in your future, and accepts you just the way you are."</p>
+        <p>"Friendship is the only cement that will ever hold the world together."</p>
+    </div>
+
+    <div class="message">
+        <h2>A Special Note for Ammu</h2>
+        <p>Ammu Chanudu, the little princess with killing eyes and attitude,</p>
+        <p>you’re truly one of a kind! Your charm and grace make everyone’s day brighter.</p>
+        <p>Keep shining like the star you are, and let this year be as amazing as you!</p>
+    </div>
+
+    <div class="footer">
+        <p>Best wishes and warm regards from <strong>Ammu's Friend</strong>.</p>
+    </div>
+
+</body>
+</html>
