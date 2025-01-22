@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Greeting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ffd700; /* Gold for the title */
+            margin-bottom: 20px;
+            animation: wave 2.5s infinite; /* Wave animation for the quote */
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .message {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
+            padding: 30px;
+            border-radius: 15px; /* Softer rounded corners */
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            margin: 30px auto;
+            max-width: 600px;
+            backdrop-filter: blur(8px); /* Adds a glassy effect */
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.1em;
+            color: #ffd700; /* Gold color for footer */
+        }
+
+        .friendship-quotes {
+            margin-top: 40px;
+            font-size: 1.3em;
+            font-style: italic;
+            color: #ffebcd; /* Light golden color for quotes */
+        }
+
+        .friendship-quotes p {
+            transition: transform 0.3s, color 0.3s; /* Smooth hover effects */
+        }
+
+        .friendship-quotes p:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            color: #ffd700; /* Gold color on hover */
+        }
+
+        /* Title Animation */
+        @keyframes wave {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(-5deg);
+            }
+            75% {
+                transform: rotate(5deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p, .friendship-quotes {
+                font-size: 1.2em;
+            }
+
+            .message {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>“True friendship is a knot that angels have tied.”</h1>
+
+    <div class="message">
+        <p>Hey Ammu! 😊</p>
+        <p>I hope this message brings a smile to your face.</p>
+        <p>Friends like you are rare gems, and I’m so lucky to have you in my life!</p>
+    </div>
+
+    <div class="friendship-quotes">
+        <p>"Friendship is not about who you’ve known the longest; it’s about who walked into your life and said, 'I’m here for you,' and proved it."</p>
+        <p>"A real friend is one who walks in when the rest of the world walks out."</p>
+        <p>"Friendship isn’t about big things—it’s about the million little things."</p>
+    </div>
+
+    <div class="message">
+        <h2>A Special Note for Ammu</h2>
+        <p>Ammu Chanudu, the little princess with killing eyes and attitude,</p>
+        <p>You’re one of the brightest and most inspiring people I know.</p>
+        <p>Thank you for being such an amazing friend. Always keep that confidence and charm alive!</p>
+    </div>
+
+    <div class="footer">
+        <p>With lots of love,</p>
+        <p><strong>Your Forever Friend</strong></p>
+    </div>
+
+</body>
+</html>
