@@ -3,99 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manikyam - ATS Resume</title>
+    <title>DevOps Tools Showcase</title>
     <style>
-        /* General Body Styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             text-align: center;
-            background-color: #ffffff; /* Set white background for the page */
+            margin: 50px;
+            background-color: #f4f4f4;
         }
-
-        /* Ashoka Chakra Background Image */
-        .ashoka-chakra {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1; /* Position behind the content */
-            opacity: 0.2; /* Make the Ashoka Chakra transparent */
-            pointer-events: none; /* Prevents the image from blocking other content */
-        }
-
-        /* Container Styling */
-        .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-        }
-
         h1 {
-            color: #138808; /* Dark green color for title */
+            color: #2c3e50;
         }
-
-        h2 {
-            color: #ff9933; /* Orange color for subtitles */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .tool {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
         }
-
-        ul li {
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
+        img {
+            width: 100px;
+            height: 100px;
         }
-
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #666;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Ashoka Chakra as Background -->
-    <div class="ashoka-chakra">
-        <img src="images/ashoka-chakra.png" alt="Ashoka Chakra" width="400px" height="400px">
-    </div>
-
-    <!-- Content Section -->
+    <h1>Popular DevOps Tools</h1>
     <div class="container">
-        <h1>Welcome to Manikyam's ATS Resume</h1>
-        <p>Hello, my name is <strong>Manikyam</strong>. I completed my graduation in <strong>B.Sc Computer Science</strong> in Telangana.</p>
-
-        <h2>Core Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, C++</li>
-            <li>Web Development: HTML, CSS, JavaScript, React.js</li>
-            <li>Database Management: MySQL, MongoDB</li>
-            <li>DevOps Tools: Jenkins, Docker, Kubernetes</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Operating Systems: Windows, Linux</li>
-        </ul>
-
-        <h2>Achievements</h2>
-        <ul>
-            <li>Developed a web application for library management.</li>
-            <li>Certified in Full-Stack Web Development.</li>
-            <li>Participated in state-level coding competitions.</li>
-        </ul>
+        <div class="tool">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg" alt="Jenkins">
+            <h3>Jenkins</h3>
+            <p>Continuous Integration & Delivery</p>
+        </div>
+        <div class="tool">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ansible_Logo.svg" alt="Ansible">
+            <h3>Ansible</h3>
+            <p>Configuration Management</p>
+        </div>
+        <div class="tool">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes">
+            <h3>Kubernetes</h3>
+            <p>Container Orchestration</p>
+        </div>
+        <div class="tool">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Terraform_Logo.svg" alt="Terraform">
+            <h3>Terraform</h3>
+            <p>Infrastructure as Code</p>
+        </div>
     </div>
-
-    <footer>
-        <p>© 2025 Manikyam - B.Sc Computer Science</p>
-    </footer>
-
+    
+    <button onclick="showMessage()">Learn More</button>
+    
+    <script>
+        function showMessage() {
+            alert("DevOps is a culture of collaboration, automation, and continuous improvement!");
+        }
+    </script>
 </body>
 </html>
